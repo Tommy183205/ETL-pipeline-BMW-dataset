@@ -46,3 +46,5 @@ archive/*.csv.bak
 build/
 dist/
 *.egg-info/
+
+archive/
