@@ -6,6 +6,8 @@ from config.constants import TABLE_RAW, TABLE_CLEAN, DATA_TYPES, REQUIRED_COLUMN
 
 logger = logger_config('src.extract.csv_extractor')
 
+# Đây là nơi sẽ chứa các hàm để trích xuất dữ liệu từ file CSV
+# Từ file CSV, ta sẽ đọc dữ liệu vào DataFrame của pandas
 class ExtractorCSV:
 
     @staticmethod

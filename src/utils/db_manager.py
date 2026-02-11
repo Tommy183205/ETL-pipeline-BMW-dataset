@@ -4,6 +4,11 @@ from contextlib import contextmanager
 from config.config import DB_CONFIG
 from config.log_config import logger_config
 
+# Đây là nơi sẽ chứa các hàm để quản lý kết nối database
+# Tạo connection pool để tái sử dụng kết nối, tránh việc tạo và đóng kết nối liên tục gây tốn tài nguyên
+# Sử dụng psycopg2.pool.SimpleConnectionPool để tạo connection pool
+# Tạo class DBManager để quản lý connection pool và cung cấp các phương thức lấy kết nối và con trỏ (cursor)
+# Sử dụng context manager để tự động quản lý việc lấy và trả kết nối, con trỏ, tránh rò rỉ kết nối
 logger = logger_config('utils.db_manager')
 
 # Idea ở trong class này là tạo một connection pool để quản lý kết nối DB

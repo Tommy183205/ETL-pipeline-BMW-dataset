@@ -6,6 +6,8 @@ from config.config import DB_CONFIG
 from pandas.api.types import is_integer_dtype, is_float_dtype, is_string_dtype
 from pathlib import Path
 
+# Đây là nơi sẽ chứa các hàm để validate dữ liệu, nó sẽ khác với cleaner ở chỗ cleaner là để làm sạch dữ liệu
+# Còn validate là để kiểm tra dữ liệu đã sạch hay chưa, có hợp lệ để load vào DB hay không
 
 
 logger = logger_config('flow.etl')

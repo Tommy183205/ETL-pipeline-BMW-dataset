@@ -7,7 +7,9 @@ from src.utils.db_manager import DBManager
 
 
 logger = logger_config('src.load.db_loader')
-
+# Đây là nơi sẽ chứa các hàm để load dữ liệu vào database
+# Từ DataFrame của pandas, ta sẽ load dữ liệu vào database
+# Việc xử lý trước khi load vào DB được gọi tại đây, còn việc xử lý chi tiết sẽ được thực hiện trong hàm khác ở src/transform/cleaner.py
 class DBLoader:
 
     @staticmethod

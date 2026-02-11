@@ -4,8 +4,9 @@ from src.transform.validate import check_validate_dataframe, cal_hash_file, chec
 from config.constants import REQUIRED_COLUMNS, COLUMNS_MAPPING, DATA_TYPES
 
 logger = logger_config('src.transform.cleaner')
-
-
+# Đây là nơi sẽ chứa các hàm để làm sạch dữ liệu
+# Từ DataFrame của pandas, ta sẽ làm sạch dữ liệu trước khi load vào database, cũng là bước trung gian giữa extract và load
+# Sau khi làm sạch thì trả về DataFrame đã được làm sạch cho bước load sử dụng
 class DataCleaner:
     #  Phương thức tĩnh để làm sạch dữ liệu trong DataFrame
     @staticmethod
