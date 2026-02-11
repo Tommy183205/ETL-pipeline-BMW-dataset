@@ -1,6 +1,6 @@
 import pandas as pd
 from config.log_config import logger_config
-from config.validate import check_validate_dataframe, cal_hash_file, check_data_exist, check_validate_csv
+from src.transform.validate import check_validate_dataframe, cal_hash_file, check_data_exist, check_validate_csv
 from config.constants import REQUIRED_COLUMNS, COLUMNS_MAPPING, DATA_TYPES
 
 logger = logger_config('src.transform.cleaner')

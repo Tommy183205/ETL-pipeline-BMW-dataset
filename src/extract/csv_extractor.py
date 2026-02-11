@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 from config.log_config import logger_config
-from config.validate import cal_hash_file, check_data_exist, check_validate_csv, check_validate_dataframe
+from src.transform.validate import cal_hash_file, check_data_exist, check_validate_csv, check_validate_dataframe
 from config.constants import TABLE_RAW, TABLE_CLEAN, DATA_TYPES, REQUIRED_COLUMNS, COLUMNS_MAPPING
 
 logger = logger_config('src.extract.csv_extractor')

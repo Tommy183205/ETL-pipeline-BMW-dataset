@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 from config.log_config import logger_config
 from config.constants import TABLE_RAW, TABLE_CLEAN, COLUMNS_MAPPING, DATA_TYPES, REQUIRED_COLUMNS
-from config.validate import cal_hash_file, check_data_exist, check_validate_csv, check_validate_dataframe
+from src.transform.validate import cal_hash_file, check_data_exist, check_validate_csv, check_validate_dataframe
 from src.utils.db_manager import DBManager
 
 
